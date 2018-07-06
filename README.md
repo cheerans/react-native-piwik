@@ -48,8 +48,8 @@ compile project(':react-native-piwik')
 
 ### Tracker Usage
 
-### Getting Piwik Module
-Piwik module is created and added as a native modules and can be obtained via native modules, as follows
+#### Getting Piwik Module
+Piwik module is created and added as a native module and can be obtained via native modules, as follows
 
 ```javascript
 var Piwik = NativeModules.Piwik;
