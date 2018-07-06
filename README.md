@@ -48,7 +48,7 @@ compile project(':react-native-piwik')
 
 ### Tracker Usage
 
-#### Getting Piwik Module
+#### Getting Piwik Module for Android
 Piwik module is created and added as a native module and can be obtained via native modules, as follows
 
 ```javascript
