@@ -19,8 +19,17 @@ import java.net.MalformedURLException;
 public class PiwikModule extends ReactContextBaseJavaModule implements LifecycleEventListener {
 
     private static final String LOGGER_TAG = "PiwikModule";
+    
+    private static PiwikModule instance = null;
+    
+    public static PiwikModule getInstance(){        
+        if(null == instance){
+            instance = new PiwikModule(ReactInstanceManager.getCurrentReactContext());
+        }
+        return instance;
+    }    
 
-    public PiwikModule(ReactApplicationContext reactContext) {
+    protected PiwikModule(ReactApplicationContext reactContext) {
         super(reactContext);
         reactContext.addLifecycleEventListener(this);
     }
